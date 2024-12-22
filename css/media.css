@@ -1,0 +1,57 @@
+@media (max-width:1080px) {
+
+  .header-rom {
+
+    column-gap: 30px;
+  }
+
+  .header-rom img {
+
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 52px;
+  }
+
+  @media (max-width:767px) {
+    .messangers {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (max-width: 600px) {
+    body {
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-rom {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .header-rom img {
+      width: 100px;
+      height: auto;
+    }
+
+    .portfolio .card {
+      width: 100%;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .footer-inner {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Портфолио</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/my.css" />
+  <link rel="stylesheet" href="css/media.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="navigation">
+        <a href="#">Главная страница</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#footer-anchor">Контакты</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="header-rom">
+        <img src="img/photo.jpg" srcset="img/photo@2x.jpg" alt="Фото" />
+        <div class="header-text">
+          <h1 class="wow animate__backInRight">Солотинский Максим</h1>
+          <p>
+            фрилансер, веб-разработчик,<br />
+            создание сайтов
+          </p>
+          <div class="header-buttons">
+            <a class="button" href="#">Портфолио</a>
+            <a class="button-border" href="#">Контакты</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <video class="header-video" autoplay muted loop>
+      <source type="video/mp4" src="video/background.mp4">
+    </video>
+  </header>
+  <main>
+    <div class="container">
+      <section id="portfolio">
+        <h2 class="wow animate__backInLeft">Портфолио</h2>
+        <div class="card">
+          <img src="img/projects/project-01.jpg" alt="">
+          <a href="http://127.0.0.1:5500/%D0%A2%D1%80%D0%B5%D1%82%D0%B8%D0%B9%20%D0%BA%D1%83%D1%80%D1%81/%D0%9F%D0%98%D0%A1/PortfolioTest/furniture_store.html"
+            target="_blank">Сайт магазина
+            мебели</a>
+        </div>
+        <div class="card">
+          <img src="img/projects/project-02.jpg" alt="">
+          <a href="http://127.0.0.1:5500/%D0%A2%D1%80%D0%B5%D1%82%D0%B8%D0%B9%20%D0%BA%D1%83%D1%80%D1%81/%D0%9F%D0%98%D0%A1/PortfolioTest/travel_agency.html"
+            target="_blank">Сайт туристического
+            агенства</a>
+        </div>
+        <div class="card">
+          <img src="img/projects/project-03.jpg" alt="">
+          <a href="http://127.0.0.1:5500/%D0%A2%D1%80%D0%B5%D1%82%D0%B8%D0%B9%20%D0%BA%D1%83%D1%80%D1%81/%D0%9F%D0%98%D0%A1/PortfolioTest/housing_complex.html"
+            target="_blank">Сайт жилого
+            комплекса</a>
+        </div>
+      </section>
+    </div>
+    <section class="contacts">
+      <h2 class="wow animate__backInLeft">Контакты</h2>
+      <div class="messengers">
+        <div class="messenger">
+          <img src="img/icons/telegram.svg" alt="">
+          <a href="">Написать в Telegram</a>
+
+        </div>
+        <div class="messenger">
+          <img src="img/icons/whatsapp.svg" alt="">
+          <a href="">Отправить в WhatsApp</a>
+        </div>
+        <div class="messenger">
+          <img src="img/icons/vk.svg" alt="">
+          <a href="">Связаться ВКонтакте</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="inner-footer">
+        <p>© Солотинский Максим<br>HTML верстальщик, создание сайтов Макеевка
+        </p>
+        <p id="footer-anchor"><a href="#">💻 Макет свёрстан на курсе "Интернет-программирование"</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="js/my.js"></script>
+</body>
+
+</html>
