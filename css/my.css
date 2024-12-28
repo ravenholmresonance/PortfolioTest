@@ -79,11 +79,6 @@ h1 {
   font-weight: 300;
 }
 
-.header-buttons {
-  display: flex;
-  column-gap: 20px;
-}
-
 nav {
   position: fixed;
   top: 0;
@@ -234,4 +229,11 @@ footer {
   font-weight: bold;
   color: #333;
   margin: 20px 0;
+}
+
+#portfolio .card {
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
 }

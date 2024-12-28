@@ -10,6 +10,33 @@
   <link rel="stylesheet" href="css/my.css" />
   <link rel="stylesheet" href="css/media.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script type="text/javascript">
+    function fulltime() {
+      var time = new Date();
+      var newYear = new Date("January 1, 2025, 00:00:00");
+      var totalRemains = (newYear.getTime() - time.getTime());
+      if (totalRemains > 1) {
+        var RemainsSec = (parseInt(totalRemains / 1000));
+        var RemainsFullDays = (parseInt(RemainsSec / (24 * 60 * 60)));
+        var secInLastDay = RemainsSec - RemainsFullDays * 24 * 3600;
+        var RemainsFullHours = (parseInt(secInLastDay / 3600));
+        if (RemainsFullHours < 10) { RemainsFullHours = "0" + RemainsFullHours };
+        var secInLastHour = secInLastDay - RemainsFullHours * 3600;
+        var RemainsMinutes = (parseInt(secInLastHour / 60));
+        if (RemainsMinutes < 10) { RemainsMinutes = "0" + RemainsMinutes };
+        var lastSec = secInLastHour - RemainsMinutes * 60;
+        if (lastSec < 10) { lastSec = "0" + lastSec };
+        document.getElementById("RemainsFullDays").innerHTML = RemainsFullDays + " дн., ";
+        document.getElementById("RemainsFullHours").innerHTML = RemainsFullHours + " ч., ";
+        document.getElementById("RemainsMinutes").innerHTML = RemainsMinutes + " мин., ";
+        document.getElementById("lastSec").innerHTML = lastSec + " сек. ";
+        setTimeout('fulltime()', 10)
+      }
+      else {
+        document.getElementById("clock").innerHTML = "С Новым годом!";
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -19,6 +46,12 @@
         <a href="#">Главная страница</a>
         <a href="#portfolio">Портфолио</a>
         <a href="#footer-anchor">Контакты</a>
+        <span id="clock">До Нового года осталось:
+          <b><span id="RemainsFullDays"></span></b>
+          <b><span id="RemainsFullHours"></span></b>
+          <b><span id="RemainsMinutes"></span></b>
+          <b><span id="lastSec"></span></b>
+        </span>
       </div>
     </nav>
     <div class="container">
@@ -30,10 +63,6 @@
             фрилансер, веб-разработчик,<br />
             создание сайтов
           </p>
-          <div class="header-buttons">
-            <a class="button" href="#">Портфолио</a>
-            <a class="button-border" href="#">Контакты</a>
-          </div>
         </div>
       </div>
     </div>
@@ -88,7 +117,7 @@
   <footer>
     <div class="container">
       <div class="inner-footer">
-        <p>© Солотинский Максим<br>HTML верстальщик, создание сайтов Макеевка
+        <p>© Солотинский Максим<br>HTML-верстальщик, создание сайтов Макеевка
         </p>
         <p id="footer-anchor"><a href="#">💻 Макет свёрстан на курсе "Интернет-программирование"</a></p>
       </div>
@@ -96,6 +125,7 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script src="js/my.js"></script>
+  <script type="text/javascript">fulltime();</script>
 </body>
 
 </html>
