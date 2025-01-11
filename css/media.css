@@ -55,3 +55,93 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-rom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-rom img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .header-text h1 {
+    font-size: 24px;
+  }
+
+  .header-text p {
+    font-size: 16px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contacts {
+    padding: 20px;
+  }
+
+  .messengers {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .messenger {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-rom img {
+    width: 120px;
+  }
+
+  .header-text h1 {
+    font-size: 20px;
+  }
+
+  .header-text p {
+    font-size: 14px;
+  }
+
+  .card a {
+    font-size: 14px;
+  }
+
+  .navigation {
+    gap: 5px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  #clock {
+    font-size: 12px;
+  }
+
+  footer p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  footer #footer-anchor a {
+    font-size: 12px;
+  }
+}
